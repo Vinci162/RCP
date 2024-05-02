@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/bodyColor"
+    tools:ignore="HardcodedText"
+    tools:context=".MainActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        style="@style/buttonStartStop">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/mainifont"
+            android:lines="1"
+            android:maxLines="1"
+            android:text="SMART Roller Shade"
+            android:textAlignment="center"
+
+            android:textColor="@color/lighBrown"
+            android:textSize="35sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.271" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <LinearLayout
+        style="@style/buttonStartStop"
+        android:layout_height="468dp">
+
+
+        <Button
+            style="@style/button"
+            android:id="@+id/startbutton"
+            android:layout_width="10dp"
+            android:layout_height="96dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="100dp"
+            android:background="@drawable/button_style"
+            android:onClick="startButton"
+            android:text="Start"
+            android:textSize="20sp" />
+
+        <Button
+            style="@style/button"
+            android:id="@+id/stopbutton"
+            android:layout_width="10dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="100dp"
+            android:background="@drawable/button_style"
+            android:onClick="stopButton"
+            android:text="Stop"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+    <!--<LinearLayout
+   style="@style/buttonStartStop">
+
+        <Button
+            style="@style/button"
+            android:layout_height="69dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginRight="50dp"
+            android:layout_marginBottom="100dp"
+            android:background="@drawable/button_style"
+            android:onClick="stopButton"
+            android:text="calibration"
+            android:textSize="20sp" />
+
+</LinearLayout>-->
+</LinearLayout>
